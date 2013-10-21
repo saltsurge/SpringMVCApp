@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JustSpring/JustSpring.iml" filepath="$PROJECT_DIR$/JustSpring/JustSpring.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMVCApp.iml" filepath="$PROJECT_DIR$/SpringMVCApp.iml" />
     </modules>
   </component>

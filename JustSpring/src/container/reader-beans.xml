@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="fileReader" class="container.FileReader" destroy-method="cleanup" init-method="init">
+        <constructor-arg value="/Users/jim.sun/github/SpringMVCApp/JustSpring/resources/basics-trades-data.txt"/>
+        <property name="prop1" ref="prop1Ref" />
+        <property name="countryProperties">
+            <props>
+                <prop key="UK">London</prop>
+                <prop key="USA">Washington DC</prop>
+            </props>
+        </property>
+    </bean>
+    <bean id="prop1Ref" class="java.lang.String"/>
+</beans>
+
